@@ -24,47 +24,78 @@
 
     <!-- <link rel="stylesheet" href="normalize.css"> -->
 
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Main css File -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    <!-- start header -->
     <header>
         <div class="slider">
             <div class="container">
 
-                <div class="header-top flex-rule">
-
+                <div class="header-top flex-rule" id="home">
                     <div class="logo">fokir</div>
-                    <nav>
+
+                    <nav class="flex-rule">
+                        <div class="burger flex-rule">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
                         <ul class="main-ul flex-rule">
                             <li><a href="#" class="special">home</a></li>
-                            <li><a href="#">about</a></li>
-                            <li><a href="#">services</a></li>
-                            <li><a href="#">portfolio</a></li>
-                            <li><a href="#">testimonial</a></li>
-                            <li><a href="#">blog</a></li>
-                            <li><a href="#">contact</a></li>
+                            <li><a href="#hello">about</a></li>
+                            <li><a href="#our-services">services</a></li>
+                            <li><a href="#our-portfolio">portfolio</a></li>
+                            <li><a href="#website-info">testimonial</a></li>
+                            <li><a href="#our-blog">blog</a></li>
+                            <li><a href="#contact-us">contact</a></li>
                         </ul>
+
                     </nav>
+
+
                 </div>
+
             </div>
             <div class="header-description">
-                <h3 class="white-color">hello i'm</h3>
+                <h3>hello i'm</h3>
                 <h1>alex smith</h1>
-                <p class="white-color">Professional Web <span>developer</span></p>
+                <div class="animation-parent flex-rule">
+                    <div class="static-txt">professional web</div>
+                    <span class="dynamic-text-1">developer</span>
+                    <span class="dynamic-text-2">designer</span>
+                </div>
+
             </div>
+
+            </p>
+
         </div>
 
-
-
-
-
-
+        </div>
 
     </header>
+    <!-- end header -->
     <main>
-        <section class="hello flex-rule">
+        <!-- start about area -->
+        <section class="hello flex-rule" id="hello">
             <div class="container flex-rule">
                 <div class="image-parent">
                     <div class="image">
@@ -130,7 +161,10 @@
                 </div>
             </div>
         </section>
-        <section class="our-services flex-rule">
+        <!-- end about area -->
+
+        <!-- start services area -->
+        <section class="our-services flex-rule" id="our-services">
             <div class="container">
                 <div class="common-top">
                     <h2>our services</h2>
@@ -176,7 +210,10 @@
                 </div>
             </div>
         </section>
-        <section class="our-portfolio flex-rule">
+        <!-- end services area -->
+
+        <!-- start portfolio area -->
+        <section class="our-portfolio flex-rule" id="our-portfolio">
             <div class="container">
                 <div class="common-top">
                     <h2>our portfolio</h2>
@@ -245,7 +282,9 @@
                 </div>
             </div>
         </section>
-        <section class="website-info flex-rule">
+        <!-- end portfolio area -->
+        <!-- start testimonial area -->
+        <section class="website-info flex-rule" id="website-info">
             <div class="container flex-rule">
                 <div class="info">
                     <i class="fa-solid fa-file"></i>
@@ -273,24 +312,33 @@
                 </div>
             </div>
         </section>
-        <section class="clients-feedback">
+        <!-- end testimonial area -->
+
+        <!-- start clients feedback area -->
+        <section class="clients-feedback" id="clients-feedback">
             <div class="container">
                 <div class="common-top">
                     <h2>client's feedback</h2>
                     <div class="line"></div>
                 </div>
-                <div class="clients-feedback-bottom">
-                    <div class="client-info flex-rule">
+                <div class="clients-feedback-bottom owl-carousel owl-theme">
+
+                    <div class="client-info flex-rule item">
+
                         <div class="triangle">
 
                         </div>
                         <div class="image"><img src="./imgs/2 (1).jpg" alt="clients feedback"></div>
 
-                        <div class="client-description">
+                        <div class="client-description ">
+
                             <h2>alex ander</h2>
                             <a href="#"> <i class="fa-solid fa-location-dot"></i> united</a>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus ex magni
-                                sunt, architecto vel dolore, laudantium dignissimos debitis optio! Exercitationem
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus
+                                ex
+                                magni
+                                sunt, architecto vel dolore, laudantium dignissimos debitis optio!
+                                Exercitationem
                                 adipisicing elit.</p>
                             <div class="stars">
                                 <i class="fa-solid fa-star"></i>
@@ -298,20 +346,57 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             </div>
+
                         </div>
 
+
                     </div>
-                    <div class="bullets">
-                        <span></span>
-                        <span></span>
+                    <div class="client-info flex-rule item">
+
+                        <div class="triangle">
+
+                        </div>
+                        <div class="image"><img src="./imgs/3 (1).jpg" alt="clients feedback"></div>
+
+                        <div class="client-description ">
+
+                            <h2>alex ander</h2>
+                            <a href="#"> <i class="fa-solid fa-location-dot"></i> united</a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus
+                                ex
+                                magni
+                                sunt, architecto vel dolore, laudantium dignissimos debitis optio!
+                                Exercitationem
+                                adipisicing elit.</p>
+                            <div class="stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </div>
+
+                        </div>
+
+
                     </div>
+
+
                 </div>
+                <!-- another way for bullets -->
+                <!-- <div class="bullets">
+                    <span></span>
+                    <span></span>
+                </div> -->
             </div>
+
         </section>
-        <section class="our-blog">
+        <!-- start clients feedback area -->
+
+        <!-- start our blog area -->
+        <section class="our-blog" id="our-blog">
             <div class="container">
                 <div class="common-top">
-                    <h2>our portfolio</h2>
+                    <h2>our blog</h2>
                     <div class="line"></div>
                 </div>
                 <div class="our-blog-bottom flex-rule">
@@ -357,7 +442,10 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us">
+        <!-- end our blog area -->
+
+        <!-- start contact us area -->
+        <section class="contact-us" id="contact-us">
             <div class="container">
                 <div class="common-top">
                     <h2>contact us</h2>
@@ -376,7 +464,16 @@
 
             </div>
         </section>
+        <!-- start contact us area -->
+
+
+        <div class="scroll-top flex-rule">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+
+        </div>
     </main>
+
+    <!-- start footer -->
     <footer class="flex-rule">
         <div class="container flex-rule">
             <div class="social-media">
@@ -386,8 +483,28 @@
                 <a href="#"><i class="fa-brands fa-github"></i></a>
             </div>
             <p>Copy Right 2018 © By <a href="#">Theme-fair</a> All Rights Reserved</p>
+
         </div>
     </footer>
+
+
+
+    <!-- end footer -->
+
+    <!-- jquery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- owl cuersour library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- main js file & jquery -->
+    <script src="./js/script.js">
+
+    </script>
 </body>
 
 </html>
